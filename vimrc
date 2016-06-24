@@ -63,7 +63,7 @@ set list listchars=tab:»·,trail:·
 :set noantialias
 
 " Color scheme
-colorscheme Monokai
+colorscheme muon
 set background=dark
 set encoding=utf-8
 
