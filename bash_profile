@@ -3,8 +3,6 @@
 export TERM=xterm-256color
 export EDITOR=/usr/bin/vim
 
-# map capslock to escape
-setxkbmap -option caps:escape
 
 # aliases
 alias ll='ls -l'

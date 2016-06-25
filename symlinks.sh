@@ -5,7 +5,7 @@
 
 dir=~/git/dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_old                # old dotfiles backup directory
-files="bash_profile vimrc vim"              # list of files/folders to symlink in homedir
+files="profile bash_profile vimrc vim"              # list of files/folders to symlink in homedir
 
 ##########
 
