@@ -24,9 +24,11 @@ let $PATH='/usr/local/bin:' . $PATH
 
 :au FocusLost * :wa "Save on focus lost
 
+let g:airline_powerline_fonts = 1
 let g:airline_theme='lucius'
 " Sessions
 let g:session_autoload = 'no'
+
 
 " Reduce timeout after <ESC> is recvd. This is only a good idea on fast links.
 set ttimeout
