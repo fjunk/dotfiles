@@ -9,6 +9,6 @@ alias ll='ls -l'
 alias la='ls -al'
 
 # source ~/.bashrc
-if [-f ~/.bashrc ]; then
+if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
