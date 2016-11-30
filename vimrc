@@ -76,9 +76,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Display extra whitespace
-set list listchars=tab:»·,trail:·
-
 :set smartcase
 :set ignorecase
 :set noantialias
