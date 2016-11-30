@@ -84,7 +84,7 @@ set list listchars=tab:»·,trail:·
 :set noantialias
 
 " Color scheme
-colorscheme muon
+" colorscheme muon
 set encoding=utf-8
 
 " Highlight line number of where cursor currently is

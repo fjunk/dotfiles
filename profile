@@ -9,7 +9,7 @@
 #umask 022
 
 # map capslock to escape
-setxkbmap -option caps:escape
+# setxkbmap -option caps:escape
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
