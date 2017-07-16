@@ -5,7 +5,7 @@
 
 dir=~/dev/dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_old                # old dotfiles backup directory
-files="tmux.conf bash_profile vimrc vim"              # list of files/folders to symlink in homedir
+files="tmux.conf vimrc vim"              # list of files/folders to symlink in homedir
 
 ##########
 
@@ -26,12 +26,3 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
-
-# fish things
-fishpath=~/.config/fish
-
-if [ -d $fishpath ]; then
-    rm -r $olddir/fish
-    mv $fishpath $olddir
-fi
-ln -s $dir/fish $fishpath
