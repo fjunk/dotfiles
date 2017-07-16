@@ -1,1 +1,0 @@
-/home/fjunk001/.local/share/omf/themes/godfather/fish_prompt.fish
