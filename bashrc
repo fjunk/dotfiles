@@ -10,18 +10,24 @@ case $- in
 esac
 
 ### FABIAN STUFF
+###
 
 alias c='clear'
 alias amigo='cd ~/dev/amigo/AMIGO/trunk/src/webserver/textSearchEngine'
 
 # POWERLINE 
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
 
+# SOURCE POWERLINE
+#if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
+#    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+#fi
+
+###
 ### END FABIAN STUFF
 
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth

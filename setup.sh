@@ -28,17 +28,23 @@ for file in $files; do
 done
 
 
+# create tmp dir
+mkdir tmp
 
-### Powerline
-sudo apt-get install powerline
+# requiremente
+sudo apt-get install git tmux
 
-### Vundle install
-# git clone https://github.com/VundleVim/Vundle.vim.git ./bundle/Vundle.vim
+# set up Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git vim/bundle/Vundle.vim
 
-###  Vim Airline
-git clone https://github.com/vim-airline/vim-airline ./vim/vim-airline
-git clone https://github.com/vim-airline/vim-airline-themes ./vim/vim-airline-themes
+### powerline fonts for Airline 
+git clone https://github.com/powerline/fonts.git tmp/fonts
+cd tmp/fonts
+./install.sh
+cd $dir 
 
 ### Vim Colors 
 # git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
 
+# Clean up
+rm -rf tmp
