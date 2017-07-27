@@ -1,3 +1,4 @@
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -8,6 +9,19 @@ case $- in
       *) return;;
 esac
 
+### FABIAN STUFF
+
+alias c='clear'
+alias amigo='cd ~/dev/amigo/AMIGO/trunk/src/webserver/textSearchEngine'
+
+# POWERLINE 
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+
+### END FABIAN STUFF
+
+. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -92,9 +106,6 @@ alias ll='ls -lF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias c='clear'
-alias amigo='cd ~/dev/amigo/AMIGO/trunk/src/webserver/textSearchEngine'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -107,12 +118,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-# POWERLINE 
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 
 
 # enable programmable completion features (you don't need to enable

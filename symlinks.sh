@@ -3,7 +3,7 @@
 
 ########## Variables
 
-dir=~/dev/dotfiles                    # dotfiles directory
+dir=$PWD     			      # dotfiles directory
 olddir=~/.dotfiles_old                # old dotfiles backup directory
 files="tmux.conf vimrc vim profile bashrc"              # list of files/folders to symlink in homedir
 
@@ -26,3 +26,19 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+
+
+### Powerline
+sudo apt-get install powerline
+
+### Vundle install
+# git clone https://github.com/VundleVim/Vundle.vim.git ./bundle/Vundle.vim
+
+###  Vim Airline
+git clone https://github.com/vim-airline/vim-airline ./vim/vim-airline
+git clone https://github.com/vim-airline/vim-airline-themes ./vim/vim-airline-themes
+
+### Vim Colors 
+# git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
+
