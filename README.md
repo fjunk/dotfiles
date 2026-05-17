@@ -25,6 +25,21 @@ stow --dotfiles zsh
 # zsh/dot-zshrc-shared.d/  →  ~/.zshrc-shared.d/
 ```
 
+## Homebrew
+
+All Homebrew packages (formulae, casks, taps) are declared in `brew/Brewfile`.
+
+```bash
+# Install everything from the Brewfile
+brew bundle --file=~/dotfiles/brew/Brewfile
+
+# Update Brewfile after installing new packages
+brew bundle dump --file=~/dotfiles/brew/Brewfile --force
+
+# Remove packages not listed in the Brewfile
+brew bundle cleanup --file=~/dotfiles/brew/Brewfile --force
+```
+
 ## Local (machine-specific) zsh config
 
 The zsh setup sources two directories:
