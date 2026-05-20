@@ -19,4 +19,5 @@ alias gwt="./gradlew --configuration-cache test"
 # git
 alias gpcs="git push -o ci.skip"
 alias ggpura="git pull --rebase --autostash"
+alias glg="git log --color --graph --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'"
 
