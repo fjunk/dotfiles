@@ -1,9 +1,5 @@
 {
   "plugins": {
-    "diffview.nvim": {
-      "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
-      "src": "https://github.com/sindrets/diffview.nvim"
-    },
     "flash.nvim": {
       "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
       "src": "https://github.com/folke/flash.nvim"
@@ -15,10 +11,6 @@
     "haunt.nvim": {
       "rev": "815141d7367c9d895e902db27e2d25d4652ad0fc",
       "src": "https://github.com/TheNoeTrevino/haunt.nvim"
-    },
-    "neogit": {
-      "rev": "99326a1310fb2d616b455d2fd16d01bf00682f06",
-      "src": "https://github.com/neogitorg/neogit"
     },
     "neovim": {
       "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
@@ -43,10 +35,6 @@
     "polar.nvim": {
       "rev": "2bed09cb37464df53d8a3f00ecde184977df314a",
       "src": "https://github.com/webhooked/polar.nvim"
-    },
-    "snacks.nvim": {
-      "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
-      "src": "https://github.com/folke/snacks.nvim"
     },
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
