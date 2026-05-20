@@ -1,7 +1,6 @@
 require('plugins.colorscheme')
 require('plugins.lsp')
 require('plugins.oil')
-require('plugins.noice')
 require('plugins.fzf')
 require('plugins.flash')
 require('plugins.haunt')
