@@ -4,7 +4,7 @@ Collection of dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow
 
 ## Usage
 
-Each top-level directory (`zsh/`, `nvim/`, `kitty/`, …) is a stow package. Files inside are symlinked into `$HOME` relative to the package root.
+Each top-level directory (`zsh/`, `nvim/`, `kitty/`, `tmux/`, …) is a stow package. Files inside are symlinked into `$HOME` relative to the package root.
 
 ```bash
 # Symlink a single package (e.g. zsh)
@@ -24,6 +24,24 @@ stow --dotfiles zsh
 # zsh/dot-zshrc  →  ~/.zshrc
 # zsh/dot-zshrc-shared.d/  →  ~/.zshrc-shared.d/
 ```
+
+This repo uses git submodules (e.g. for tmux plugin manager). On a fresh clone:
+
+```bash
+git clone --recurse-submodules <repo-url>
+# or, if already cloned:
+git submodule update --init --recursive
+```
+
+## Tmux
+
+Tmux config lives in `tmux/` and includes [TPM](https://github.com/tmux-plugins/tpm) as a git submodule.
+
+```bash
+stow --dotfiles tmux
+```
+
+Once inside tmux, press `prefix + I` (`C-a + I`) to install plugins. Add plugins by editing `tmux/dot-config/tmux/tmux.conf`.
 
 ## Homebrew
 
