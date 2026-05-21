@@ -5,6 +5,7 @@ tap "nikitabobko/tap"
 tap "sdkman/tap"
 
 # CLI tools
+brew "atuin"
 brew "bat"
 brew "bottom"
 brew "carapace"
@@ -14,6 +15,7 @@ brew "fzf"
 brew "gh"
 brew "go"
 brew "httpie"
+brew "lazygit"
 brew "libpq"
 brew "lsd"
 brew "neovim"
@@ -42,5 +44,4 @@ cask "raycast"
 
 # Java / JDK
 cask "corretto"
-cask "corretto@21"
 
