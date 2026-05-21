@@ -3,6 +3,9 @@ alias vi="vim"
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 
+# lazygit
+alias lg='lazygit'
+
 # bat
 alias batc='bat --style plain'
 
