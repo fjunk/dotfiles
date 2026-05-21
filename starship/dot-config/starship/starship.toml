@@ -43,14 +43,6 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 
-
-[shell]
-fish_indicator = 'fish'
-bash_indicator = 'bash'
-unknown_indicator = 'unknwn'
-style = 'teal'
-disabled = false
-
 [username]
 style_user = 'teal bold'
 format = ' [$user@]($style)'
@@ -74,13 +66,6 @@ format = '[Node](bold lavender) [$version](bold dimmed lavender) '
 
 [ocaml]
 format = '[Ocaml](bold pink) [$version](bold dimmed pink) '
-
-[memory_usage]
-disabled = false
-threshold = -1
-format = '[$ram_pct]($style)'
-symbol = ''
-style = 'dimmed blue'
 
 [localip]
 ssh_only = false
