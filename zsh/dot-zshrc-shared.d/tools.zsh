@@ -6,5 +6,9 @@ export SDKMAN_DIR="/opt/homebrew/opt/sdkman-cli/libexec"
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 
+# starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+
 # PATH
 path=("$HOME/.local/bin" "$HOME/.opencode/bin" "$BUN_INSTALL/bin" $path)
+
