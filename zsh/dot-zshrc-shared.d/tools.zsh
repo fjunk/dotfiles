@@ -8,6 +8,3 @@ export BUN_INSTALL="$HOME/.bun"
 
 # PATH
 path=("$HOME/.local/bin" "$HOME/.opencode/bin" "$BUN_INSTALL/bin" $path)
-
-# fzf
-source <(fzf --zsh)
