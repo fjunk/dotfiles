@@ -12,6 +12,10 @@
       "rev": "815141d7367c9d895e902db27e2d25d4652ad0fc",
       "src": "https://github.com/TheNoeTrevino/haunt.nvim"
     },
+    "mini.nvim": {
+      "rev": "6791615e48801cbf5b2baefadcea77a7760de3f4",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
     "neovim": {
       "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
       "src": "https://github.com/rose-pine/neovim"

@@ -1,3 +1,4 @@
+require('plugins.mini')
 require('plugins.colorscheme')
 require('plugins.lsp')
 require('plugins.oil')
