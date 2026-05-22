@@ -1,6 +1,12 @@
+os:
+  editPreset: 'nvim'
+
 gui:
   # Show flat file list by default
   showFileTree: false
+
+  # Use nerdfonts
+  nerdFontsVersion: "3"
 
   authorColors:
     # use highlight color for self
