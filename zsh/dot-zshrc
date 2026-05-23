@@ -14,7 +14,8 @@ fi
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-eval "$(atuin init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
+# Bind ctrl-r but not up arrow
+eval "$(atuin init zsh --disable-up-arrow)"
