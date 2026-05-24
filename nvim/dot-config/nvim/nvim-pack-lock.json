@@ -4,14 +4,6 @@
       "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
       "src": "https://github.com/folke/flash.nvim"
     },
-    "floating-help.nvim": {
-      "rev": "ce8567e14c032c95ca4161e69b722c845b5739b3",
-      "src": "https://github.com/Tyler-Barham/floating-help.nvim"
-    },
-    "fzf-lua": {
-      "rev": "3ff77862f6c62f7b850668435ae43aa026de8758",
-      "src": "https://github.com/ibhagwan/fzf-lua"
-    },
     "haunt.nvim": {
       "rev": "815141d7367c9d895e902db27e2d25d4652ad0fc",
       "src": "https://github.com/TheNoeTrevino/haunt.nvim"
@@ -47,14 +39,6 @@
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
       "src": "https://github.com/folke/tokyonight.nvim"
-    },
-    "vim-kitty": {
-      "rev": "cd72f2d9cfee8d6aba5a180a5ac3ca265b5d3a46",
-      "src": "https://github.com/fladson/vim-kitty"
-    },
-    "wf.nvim": {
-      "rev": "5b96c7300d4391f990d4bef22eace9d834167da4",
-      "src": "https://github.com/Cassin01/wf.nvim"
     }
   }
 }
