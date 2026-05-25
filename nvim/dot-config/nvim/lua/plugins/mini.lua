@@ -21,6 +21,7 @@ local my_items = {
 
 starter.setup({
 	footer = "",
+    header = "",
 	items = my_items,
 	evaluate_single = true,
 
