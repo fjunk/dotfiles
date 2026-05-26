@@ -1,6 +1,10 @@
 os:
   editPreset: 'nvim'
 
+git:
+  pagers:
+    - pager: delta --dark --paging=never
+
 gui:
   # Show flat file list by default
   showFileTree: false
