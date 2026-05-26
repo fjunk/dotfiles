@@ -3,7 +3,7 @@ os:
 
 git:
   pagers:
-    - pager: delta --dark --paging=never
+    - pager: delta --dark --paging=never --side-by-side
 
 gui:
   # Show flat file list by default
