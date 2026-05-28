@@ -58,6 +58,18 @@ brew bundle dump --file=~/dotfiles/brew/Brewfile --force
 brew bundle cleanup --file=~/dotfiles/brew/Brewfile --force
 ```
 
+## Git
+
+The shared git config is stowed as `~/.gitconfig`. Private settings (name, email) live in `~/.gitconfig.local`, which is **not tracked** in this repo.
+
+After stowing, create the local file on each machine:
+
+```bash
+stow --dotfiles git
+git config --file ~/.gitconfig.local user.name "Your Name"
+git config --file ~/.gitconfig.local user.email "your@email.com"
+```
+
 ## Local (machine-specific) zsh config
 
 The zsh setup sources two directories:

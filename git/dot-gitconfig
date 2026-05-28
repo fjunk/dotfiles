@@ -1,0 +1,27 @@
+# Shared git config (managed via dotfiles / stow)
+# Private settings (name, email, etc.) go in ~/.gitconfig.local
+
+[include]
+    path = ~/.gitconfig.local
+
+[push]
+    autoSetupRemote = true
+
+[core]
+    pager = delta
+    excludesfile = ~/.gitignore_global
+
+[interactive]
+    diffFilter = delta --color-only --show-syntax-themes
+
+[delta]
+    navigate = true
+    side-by-side = true
+    show-syntax-themes = true
+    features = collared-trogon
+
+[merge]
+    conflictStyle = zdiff3
+
+[include]
+    path = ~/.config/git/delta-themes.gitconfig
