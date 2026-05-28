@@ -50,17 +50,23 @@ end
 
 pick.setup( { window = { config = centered_picker } })
 
-vim.keymap.set("n", "<leader>fh", function() pick.builtin.help() end, { desc = '[F]ind [H]elp' })
-vim.keymap.set("n", "<leader>ff", function() pick.builtin.files() end, { desc = '[F]ind [F]ile' }) 
-vim.keymap.set("n", "<leader>fr", function() pick.builtin.resume() end, { desc = '[F]ind [R]esume' })
-vim.keymap.set("n", "<leader><space>", function() pick.builtin.buffers() end, { desc = '[F]ind Buffer' })
+-- custom dotiles picker
+dotfile_picker = function()
+    pick.builtin.files(nil, {source = { name = 'Dotfiles', cwd = '~/dotfiles', tool = 'rg'}})
+end
+
+vim.keymap.set("n", "<leader>sd", dotfile_picker, { desc = '[S]earch [D]otfiles' })
+vim.keymap.set("n", "<leader>sh", function() pick.builtin.help() end, { desc = '[S]earch [H]elp' })
+vim.keymap.set("n", "<leader>sf", function() pick.builtin.files() end, { desc = '[S]earch [F]ile' }) 
+vim.keymap.set("n", "<leader>sr", function() pick.builtin.resume() end, { desc = '[S]earch [R]esume' })
+vim.keymap.set("n", "<leader><space>", function() pick.builtin.buffers() end, { desc = '[S]earch Buffer' })
 
 -- mini.extra pickers
 local extra = require('mini.extra')
 extra.setup()
 
-vim.keymap.set("n", "<leader>fk", function() extra.pickers.keymaps() end, { desc = '[F]ind [K]eymap' })
-vim.keymap.set("n", "<leader>fs", function() extra.pickers.spellsuggest() end, { desc = '[F]ind [S]pelling' })
+vim.keymap.set("n", "<leader>sk", function() extra.pickers.keymaps() end, { desc = '[S]earch [K]eymap' })
+vim.keymap.set("n", "<leader>ss", function() extra.pickers.spellsuggest() end, { desc = '[S]uggest [S]pelling' })
 
 
 
