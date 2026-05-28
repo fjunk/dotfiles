@@ -1,4 +1,0 @@
-# Ignore all TPM-installed plugins; only tpm/ itself is tracked (as a submodule)
-*
-!tpm/
-!.gitignore
