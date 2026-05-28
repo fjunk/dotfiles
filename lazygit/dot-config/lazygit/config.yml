@@ -3,7 +3,7 @@ os:
 
 git:
   pagers:
-    - pager: delta --dark --paging=never --side-by-side
+    - pager: delta --dark --paging=never --side-by-side --features collared-trogon
 
 gui:
   # Show flat file list by default
