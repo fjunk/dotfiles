@@ -1,5 +1,5 @@
 vim.pack.add({
-	'https://github.com/neovim/nvim-lspconfig',
+	"https://github.com/neovim/nvim-lspconfig",
 })
 
-vim.lsp.enable('kotlin_lsp')
+vim.lsp.enable("kotlin_lsp")
