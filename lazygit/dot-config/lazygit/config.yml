@@ -9,6 +9,9 @@ gui:
   # Show flat file list by default
   showFileTree: false
 
+  # Hide command log by default
+  showCommandLog: false
+
   # Use nerdfonts
   nerdFontsVersion: "3"
 
