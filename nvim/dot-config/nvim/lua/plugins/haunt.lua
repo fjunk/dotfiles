@@ -10,15 +10,19 @@ local prefix = "<leader>h"
 map("n", prefix .. "a", function()
 	haunt.annotate()
 end, { desc = "Annotate" })
+
 map("n", prefix .. "t", function()
 	haunt.toggle_annotation()
 end, { desc = "Toggle annotation" })
+
 map("n", prefix .. "T", function()
 	haunt.toggle_all_lines()
 end, { desc = "Toggle all annotations" })
+
 map("n", prefix .. "d", function()
 	haunt.delete()
 end, { desc = "Delete bookmark" })
+
 map("n", prefix .. "C", function()
 	haunt.clear_all()
 end, { desc = "Delete all bookmarks" })
@@ -26,6 +30,7 @@ end, { desc = "Delete all bookmarks" })
 map("n", prefix .. "p", function()
 	haunt.prev()
 end, { desc = "Previous bookmark" })
+
 map("n", prefix .. "n", function()
 	haunt.next()
 end, { desc = "Next bookmark" })
@@ -37,6 +42,7 @@ end, { desc = "Show Picker" })
 map("n", prefix .. "q", function()
 	haunt.to_quickfix()
 end, { desc = "Send Hauntings to QF List (buffer)" })
+
 map("n", prefix .. "Q", function()
 	haunt.to_quickfix({ current_buffer = true })
 end, { desc = "Send Hauntings to QF List (all)" })
@@ -44,6 +50,7 @@ end, { desc = "Send Hauntings to QF List (all)" })
 map("n", prefix .. "y", function()
 	haunt.yank_locations({ current_buffer = true })
 end, { desc = "Send Hauntings to Clipboard (buffer)" })
+
 map("n", prefix .. "Y", function()
 	haunt.yank_locations()
 end, { desc = "Send Hauntings to Clipboard (all)" })
