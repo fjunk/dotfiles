@@ -1,8 +1,5 @@
 # Interactive zsh plugins loaded via Zinit.
 
-# fzf-tab must load after compinit and before plugins that wrap ZLE widgets.
-zinit light Aloxaf/fzf-tab
-
 # zsh-vi-mode -> Starship mode bridge.
 # zsh-vi-mode sets ZVM_MODE to: i, n, v, vl, or r.
 zvm_config() {
@@ -22,3 +19,12 @@ zinit light jeffreytse/zsh-vi-mode
 # Keep these near the end because they wrap command-line widgets.
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
+
+# For postponing loading `fzf`
+zinit ice lucid wait
+zinit snippet OMZP::fzf
+
+# fzf-tab must load after compinit and before plugins that wrap ZLE widgets.
+zinit ice lucid wait
+zinit light Aloxaf/fzf-tab
+
