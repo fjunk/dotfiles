@@ -10,6 +10,7 @@ require("conform").setup({
 		lua = { "stylua" },
 		kotlin = { "ktlint" },
 		sh = { "shfmt" },
+		yaml = { "yamlfmt" },
 	},
 	format_on_save = {
 		timeout_ms = 3000,
