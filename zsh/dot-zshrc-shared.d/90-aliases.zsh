@@ -6,6 +6,7 @@ alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 
 # TUI tools.
+alias k="k9s"
 alias lgit="lazygit"
 alias ldoc="lazydocker"
 
@@ -36,3 +37,6 @@ alias -s kt="$EDITOR"
 alias -s ts="$EDITOR"
 alias -s yaml="bat -l yaml"
 alias -s json="jless"
+
+# Use fzf to open file in nvim
+alias nf='fzf -m --preview="bat --color=always {}" --bind "enter:become(nvim {+})"'
