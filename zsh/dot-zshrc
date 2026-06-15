@@ -18,3 +18,6 @@ _source_zsh_dir "$HOME/.zshrc-shared.d"
 _source_zsh_dir "$HOME/.zshrc.d"
 
 unset -f _source_zsh_dir
+
+# set g alias (override git plugin g alias)
+alias g=lazygit

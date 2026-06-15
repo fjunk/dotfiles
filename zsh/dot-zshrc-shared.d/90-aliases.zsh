@@ -5,10 +5,11 @@ alias vi="vim"
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 
-# TUI tools.
+# main tui tools
 alias k="k9s"
-alias lgit="lazygit"
-alias ldoc="lazydocker"
+alias t="tuxedo"
+alias g="lazygit"
+alias d="lazydocker"
 
 # bat.
 alias batc="bat --style plain"
