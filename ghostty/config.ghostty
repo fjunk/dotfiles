@@ -1,0 +1,22 @@
+### Theme
+theme = catppuccin-mocha
+
+### Cursor shaders
+# Catppuccin Mocha blaze variants:
+# custom-shader = shaders/cursor_blaze_catppuccin_mocha_mauve.glsl
+# custom-shader = shaders/cursor_blaze_catppuccin_mocha_sky.glsl
+custom-shader = shaders/cursor_blaze_catppuccin_mocha_pink.glsl
+# custom-shader = shaders/cursor_blaze_catppuccin_mocha_teal.glsl
+# custom-shader = shaders/cursor_blaze_catppuccin_mocha_lavender.glsl
+
+### Background transparency
+# background-opacity = 0.80
+# background-blur-radius = 25
+
+macos-icon = xray
+
+keybind = super+shift+r=reload_config
+keybind = super+shift+t=toggle_quick_terminal
+keybind = super+shift+enter=toggle_split_zoom
+
+macos-titlebar-style = hidden
