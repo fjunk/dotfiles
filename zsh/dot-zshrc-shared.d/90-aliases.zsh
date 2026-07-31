@@ -14,6 +14,9 @@ alias d="lazydocker"
 # bat.
 alias batc="bat --style plain"
 
+# convenience for zoxide on enthium layout
+alias c="z"
+
 # lsd.
 alias ls="lsd"
 alias l="lsd -l"

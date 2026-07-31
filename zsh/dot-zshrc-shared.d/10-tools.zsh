@@ -21,3 +21,6 @@ eval "$(
 if command -v kotlin-lsp &>/dev/null && ! command -v intellij-server &>/dev/null; then
   ln -sf "$(command -v kotlin-lsp)" "$(dirname "$(command -v kotlin-lsp)")/intellij-server"
 fi
+
+# setup worktrunk shell completion
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
