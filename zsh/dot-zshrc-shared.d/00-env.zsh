@@ -23,6 +23,7 @@ export PI_CODING_AGENT_DIR="$HOME/.config/pi"
 
 # Put personal and tool-managed binaries ahead of the system PATH.
 path=(
+  "$HOME/.cargo/bin"
   "$HOME/.local/bin"
   "$BUN_INSTALL/bin"
   $path
