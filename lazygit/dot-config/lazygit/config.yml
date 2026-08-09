@@ -1,26 +1,21 @@
 os:
   editPreset: 'nvim'
-
 git:
-  pagers:
-    - pager: delta --dark --paging=never --side-by-side --features collared-trogon
-
+  diffRenderers:
+    - colorArg: always
+      command: delta --paging=never --features "tuicr-catppuccin-mocha -side-by-side"
 gui:
   # Show flat file list by default
   showFileTree: false
-
   # Hide command log by default
   showCommandLog: false
-
   # Use nerdfonts
   nerdFontsVersion: "3"
-
   authorColors:
     # use highlight color for self
     'Fabian Junkert': '#f9e2af'
     # use color-x for all others
     '*': '#89b4fa'
-
   # Use the mocha catppuccin theme
   theme:
     activeBorderColor:
