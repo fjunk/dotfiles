@@ -18,8 +18,7 @@
 
 [delta]
     navigate = true
-    side-by-side = true
-    features = collared-trogon
+    features = collared-trogon side-by-side
 
 [merge]
     conflictStyle = zdiff3
