@@ -1,8 +1,8 @@
-#                                              #
-# Starship Config by a3chron, catppuccin theme #
-#                                              #
+#                                             #
+# Starship Config by a3chron                  #
+#                                             #
 
-palette = "catppuccin_mocha"
+palette = "poimandres"
 
 format = """
 [╭─](overlay0)$sudo$username$hostname$localip$directory$read_only$git_branch$git_metrics ${env_var.hermit}[$fill $cmd_duration ┘](overlay0)
@@ -12,6 +12,36 @@ format = """
 scan_timeout = 10
 command_timeout = 500
 add_newline = true
+
+# Poimandres palette, aligned with the Herdr overrides.
+
+[palettes.poimandres]
+rosewater = "#FFFAC2"
+flamingo = "#FCC5E9"
+pink = "#D0679D"
+mauve = "#D0679D"
+red = "#D0679D"
+maroon = "#D0679D"
+peach = "#FCC5E9"
+yellow = "#FFFAC2"
+green = "#5FB3A1"
+teal = "#5DE4C7"
+sky = "#89DDFF"
+sapphire = "#89DDFF"
+blue = "#89DDFF"
+lavender = "#A6ACCD"
+text = "#E4F0FB"
+subtext1 = "#A6ACCD"
+subtext0 = "#A6ACCD"
+overlay2 = "#767C9D"
+overlay1 = "#506477"
+overlay0 = "#506477"
+surface2 = "#303340"
+surface1 = "#303340"
+surface0 = "#1B1E28"
+base = "#171922"
+mantle = "#171922"
+crust = "#171922"
 
 # Catppuchin Theme
 
