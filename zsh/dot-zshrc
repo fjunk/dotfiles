@@ -4,6 +4,7 @@
 # ~/.zshrc-shared.d/*.zsh; private machine-specific overrides live in
 # ~/.zshrc.d/*.zsh and are sourced last.
 
+# profiling on
 _source_zsh_dir() {
   local dir="$1"
   local conf
@@ -21,3 +22,4 @@ unset -f _source_zsh_dir
 
 # set g alias (override git plugin g alias)
 alias g=lazygit
+
