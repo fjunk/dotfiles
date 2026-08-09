@@ -40,6 +40,10 @@
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
     },
+    "poimandres.nvim": {
+      "rev": "a488957d803943a4201ac3b774913fcafa9e6b3a",
+      "src": "https://github.com/olivercederborg/poimandres.nvim"
+    },
     "polar.nvim": {
       "rev": "2bed09cb37464df53d8a3f00ecde184977df314a",
       "src": "https://github.com/webhooked/polar.nvim"
