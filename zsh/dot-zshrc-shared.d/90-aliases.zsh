@@ -40,6 +40,7 @@ alias -s md="bat"
 alias -s kt="$EDITOR"
 alias -s ts="$EDITOR"
 alias -s yaml="bat -l yaml"
+alias -s toml="bat -l toml"
 alias -s json="jless"
 
 # Use fzf to open file in nvim
